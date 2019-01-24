@@ -5,6 +5,7 @@ import Home from './Components/Home';
 import About from './Components/About';
 import Work from './Components/Work';
 import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
         <About/>
         <Work/>
         <Contact/>
+        <Footer/>
       </div>
     );
   }
