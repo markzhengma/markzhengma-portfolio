@@ -1,3 +1,7 @@
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .App{
   /* background:url("pics/background.jpg");
   background-size:cover;

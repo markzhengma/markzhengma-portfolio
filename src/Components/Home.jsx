@@ -17,14 +17,14 @@ class Home extends Component {
                         <div className='project-name' id = 'latest-name'>
                             <h3>Recent Project</h3>
                         </div>
-                        <div className='project-pic project-pic-15' id = 'latest-pic'>
-                            <div className='tech-used tech-15' id = 'latest-tech'>
+                        <div className={`project-pic project-pic-${this.props.recentWork.id}`} id = 'latest-pic'>
+                            <div className={`tech-used tech-${this.props.recentWork.id}`} id = 'latest-tech'>
                                 <h5>Technology:</h5>
                                 <p>Unity<br/>C#<br/>HTC Plugin</p>
                             </div>
                         </div>
                         <div className='project-name' id = 'latest-name'>
-                            <h5>Witch's Grotto</h5>
+                            <h5>{this.props.recentWork.title}</h5>
                         </div>
                     </div>
                 </div>
