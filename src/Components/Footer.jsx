@@ -4,7 +4,9 @@ class Footer extends Component {
     render(){
         return (
             <div className="info">
-                <div className='info-title'><h2>Mark Zheng Ma</h2><div className='resume-btn'><i>Resume</i></div></div>
+                <div className='info-title'><h2>Mark Zheng Ma</h2>
+                    <div className='resume-btn'>Resume</div>
+                </div>
                 <div className='info-list'>
                     <div className='info-single'><a className='envelope' href="mailto:markzhengma@gmail.com"><i className="fas fa-envelope"></i></a></div>
                     <div className='info-single'><a href="https://www.github.com/markzhengma" target='_blank'><i className="fab fa-github-square"></i></a></div>

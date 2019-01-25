@@ -19,31 +19,23 @@ html, body{
   position: fixed; 
   z-index:-1;
 }
+.ui{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
 header{
-  height:6vh;
-  min-height:50px;
-  /* padding:40px 20px; */
-  position:fixed;
-  width:100%;
+  height: 10%;
+  width: 100%;
   background-color:rgba(0,0,0,0.7);
   transition: background-color 0.5s;
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  z-index: 999999
-}
-.logo{
-  margin: 1vw;
-  display: none;
-}
-h1{
-  display:inline-block;
-  color:white;
 }
 .navigation{
   width: 100%;
-  height: 6vh;
+  height: 10vh;
   min-height: 50px;
   display: flex;
   flex-direction: row;
@@ -51,17 +43,15 @@ h1{
   flex-wrap: wrap;
 }
 .navs{
-  text-decoration:none;
-  /* height:5vh; */
-  /* min-height: 40px; */
-  width: 25vw;
+  text-decoration: none;
+  width: 25%;
   color:white;
-  font-size:15px;
-  transition:0.5s;
-  display:flex;
+  font-size: 15px;
+  transition: background 0.5s;
+  display: flex;
   align-items: center;
   justify-content: center;
-  cursor:pointer;
+  cursor: pointer;
 }
 .navs:hover{
   background: rgba(187, 187, 187, 0.6);
@@ -73,54 +63,51 @@ h1{
   padding:0 8px;
 }
 .resume{
-  width: 100vw;
-  height: 0vh;
-  max-height: 800px;
-  position: fixed;
+  height: 0;
+  width: 100%;
   background-color: rgba(0,0,0,0.7);
   overflow: scroll;
-  z-index: +1;
-  margin: -7vh 0 0 0;
-  top: 15vh;
   transition: height 0.5s;
-  /* display: none; */
+}
+.resume-btn-group{
+  position: absolute;
+  top: 15vh;
+  right: 10vw;
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .close-btn{
-  height: 27px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
   font-size: 13px;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 10vh;
-  left: 10vw;
-  background-color: rgba(0,0,0,0.2);
-  transition: background-color 0.5s;
-  cursor: pointer;
   display: none;
   justify-content: center;
   align-items: center;
+  background-color: rgba(0,0,0,0.4);
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+.close-btn .fas{
+  font-size: 30px;
 }
 .close-btn:hover{
   background-color: rgba(0,0,0,0.7);
 }
 .download-btn{
-  height: 27px;
-  width: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 10vh;
-  left: 30vw;
-  background-color: rgba(0,0,0,0.2);
-  transition: background-color 0.5s;
-  cursor: pointer;
+  height: 50px;
+  width: 50px;
   display: none;
   justify-content: center;
   align-items: center;
+  background-color: rgba(0,0,0,0.4);
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+.download-btn .fas{
+  font-size: 30px;
 }
 .download-btn a{
   text-decoration: none;
@@ -140,9 +127,89 @@ h1{
   margin: 2vh auto;
 }
 .resume-show{
-  /* display: inline; */
-  height: 80vh;
+  height: 75%;
+} 
+.info{
+  height: 15%;
+  width: 100%;
+  color:white;
+  background-color:rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
 }
+.info-title{
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.resume-btn{
+  font-size: 13px;
+  /* font-family: arial; */
+  height: 27px;
+  width: 70px;
+  margin: 0 5px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.3);
+  -webkit-transition: background 0.5s, color 0.5s;
+  cursor: pointer;
+}
+.resume-btn:hover{
+  background: rgba(255,255,255,1);
+  color: rgba(0,0,0,0.7);
+}
+.info-list{
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+}
+.info-single{
+  height: 30px;
+  width: 30px;
+  margin: 0 15px;
+}
+.info-single a{
+  color: white;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.envelope i{
+  font-size: 26px;
+}
+.info-single:hover{
+  animation: translateY 0.5s forwards;
+}
+/* header{
+  height:6vh;
+  min-height:50px;
+  position:fixed;
+  width:100%;
+  background-color:rgba(0,0,0,0.7);
+  transition: background-color 0.5s;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999999
+}
+.logo{
+  margin: 1vw;
+  display: none;
+}
+*/
+h1{
+  display:inline-block;
+  color:white;
+} 
 .home{
   height: 100vh;
   min-height: 660px;
@@ -638,64 +705,6 @@ h1{
 }
 .contact-form button:hover{
   background-color: rgba(0,0,0,0.3);
-}
-
-.info{
-  position: fixed;
-  width: 100vw;
-  color:white;
-  background-color:rgba(0,0,0,0.7);
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.info-title{
-  width: 80vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: 20px;
-}
-.resume-btn{
-  font-size: 13px;
-  /* font-family: arial; */
-  height: 27px;
-  width: 70px;
-  margin: 0 5px;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0,0,0,0.3);
-  -webkit-transition: background 0.5s, color 0.5s;
-  cursor: pointer;
-}
-.resume-btn:hover{
-  background: rgba(255,255,255,1);
-  color: rgba(0,0,0,0.7);
-}
-.info-list{
-  width: 80vw;
-  display: flex;
-  justify-content: center;
-}
-.info-single{
-  height: 30px;
-  width: 30px;
-  margin: 15px;
-}
-.info-single a{
-  color: white;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-.envelope i{
-  font-size: 26px;
-}
-.info-single:hover{
-  animation: translateY 0.5s forwards;
 }
 @keyframes translateY{
   0%{
