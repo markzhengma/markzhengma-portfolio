@@ -8,8 +8,13 @@ class Home extends Component {
         return (
             <div className = "ui">
                 <Header/>
-                <Resume showResume = {this.props.showResume}/>
-                <Footer/>
+                <Resume 
+                    showResume = {this.props.showResume}
+                    toggleShowResume = {this.props.toggleShowResume}
+                />
+                <Footer
+                    toggleShowResume = {this.props.toggleShowResume}
+                />
             </div>
         )
     }

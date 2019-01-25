@@ -5,7 +5,7 @@ class Footer extends Component {
         return (
             <div className="info">
                 <div className='info-title'><h2>Mark Zheng Ma</h2>
-                    <div className='resume-btn'>Resume</div>
+                    <div className='resume-btn' onClick = {this.props.toggleShowResume}>Resume</div>
                 </div>
                 <div className='info-list'>
                     <div className='info-single'><a className='envelope' href="mailto:markzhengma@gmail.com"><i className="fas fa-envelope"></i></a></div>

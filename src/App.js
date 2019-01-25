@@ -190,11 +190,21 @@ class App extends Component {
       ]
     }
   }
+
+  toggleShowResume = () => {
+    this.setState({
+      showResume: !this.state.showResume
+    })
+  }
+
   render() {
     return (
       <div className="App">
         <div className='background-img'></div>
-        <UI showResume = {this.state.showResume}/>
+        <UI 
+          showResume = {this.state.showResume}
+          toggleShowResume = {this.toggleShowResume}
+        />
         <Home recentWork = {this.state.workData[0]}/>
         <About/>
         <Work workData = {this.state.workData}/>
