@@ -20,9 +20,14 @@ html, body{
   z-index:-1;
 }
 .ui{
-  height: 100vh;
+  height: 10vh;
   width: 100vw;
   position: fixed;
+  transition: height 0.5s ease-in;
+  z-index: +1;
+}
+.ui-show{
+  height: 100vh;
 }
 header{
   height: 10%;

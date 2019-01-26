@@ -6,7 +6,7 @@ import Footer from './Footer';
 class Home extends Component {
     render(){
         return (
-            <div className = "ui">
+            <div className = {`ui ${this.props.showResume ? "ui-show" : ""}`}>
                 <Header/>
                 <Resume 
                     showResume = {this.props.showResume}
