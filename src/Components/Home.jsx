@@ -9,9 +9,9 @@ class Home extends Component {
                 <div className = 'home-box'>
                     <div className='word-box'>
                         <h2>Hi. I'm Mark</h2>
-                        <p>Web Developer</p>
-                        <p>Unity Developer</p>
-                        <p>Teacher</p>
+                        <t>Web Developer</t>
+                        <t>Unity Developer</t>
+                        <t>Teacher</t>
                     </div>
                     <div className="project" id = 'latest-project'>
                         <div className='project-name' id = 'latest-name'>

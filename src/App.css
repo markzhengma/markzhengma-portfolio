@@ -30,7 +30,7 @@ html, body{
   height: 100vh;
 }
 header{
-  height: 10%;
+  height: 10vh;
   width: 100%;
   background-color:rgba(0,0,0,0.7);
   transition: background-color 0.5s;
@@ -217,7 +217,7 @@ h1{
 } 
 .home{
   height: 100vh;
-  min-height: 660px;
+  min-height: 740px;
   background-image: url('pics/chalk_cover.png'), url('pics/chalkboard.jpg');
   background-position: -25vw 20vh, top left;
   background-size: auto 70%, 100% 100%;
