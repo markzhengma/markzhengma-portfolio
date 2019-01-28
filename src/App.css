@@ -36,7 +36,7 @@ header{
   transition: background-color 0.5s;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 .navigation{
   width: 100%;
@@ -326,9 +326,9 @@ h1{
 .project-name{
   background: rgba(0,0,0,0.3);
   height: 50px;
-  width: 300px;
+  width: 250px;
   text-align: center;
-  font-size: 30px;
+  font-size: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -337,7 +337,7 @@ h1{
 }
 .project-pic{
   height: 200px;
-  width: 300px;
+  width: 250px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -350,7 +350,7 @@ h1{
 .project-button-list{
   display: flex;
   flex-direction: row;
-  width: 300px;
+  width: 250px;
   background: rgba(0,0,0,0.3);
   transition: background-color 0.5s;
   box-sizing: border-box;
@@ -366,7 +366,7 @@ h1{
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.5s;
+  transition: background 0.5s;
   /* border: 1px solid white; */
   box-sizing: border-box;
 }
@@ -428,7 +428,7 @@ h1{
 }
 .tech-used{
   height: 200px;
-  width: 300px;
+  width: 250px;
   background:rgba(0,0,0,0.5);
   color: white;
   display: flex;
@@ -508,7 +508,7 @@ h1{
   height: 95px;
   width: 150px;
   background-size: cover;
-  background-position: center bottom;
+  background-position: center;
 }
 .img-1{
   background-image: url('pics/beijing.jpg');
@@ -538,7 +538,7 @@ h1{
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  transition: max-height 0.5s ease;
+  transition: max-height 0.5s ease-in-out;
   border-bottom: 2px solid white; 
 }
 .scroll p{

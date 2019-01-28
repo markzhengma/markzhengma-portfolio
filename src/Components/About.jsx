@@ -3,86 +3,91 @@ import React, { Component } from 'react';
 class About extends Component {
     render() {
         return (
-            <div className="about">
+            <div className="about" ref = {this.props.aboutRef}>
                 <div className="spacer about-spacer">
                 </div>
                     <h2><i className="fa fa-id-card fa-fw" aria-hidden="true"></i>About Me</h2>
                 <div className='paragraph-list'>
-                    <div className="paragraphs" id="p1">
-                        <div className='paragraph-title title-p1'>
+                    <div className={`paragraphs ${this.props.showParaId.includes("p1") ? `selection` : ``}`} id="p1" 
+                        onClick = {() => this.props.showOrHideParagraph("p1")}>
+                        <div className={`paragraph-title title-p1 ${this.props.showParaId.includes("p1") ? window.innerWidth >= 1200 ? `title-hide` : `` : ``}`}>
                             <h2>Education</h2>
                         </div>
                         <div className='image img-1'>
                         </div>
-                        <div className='paragraph-single single-p1'>
+                        <div className={`paragraph-single single-p1 ${this.props.showParaId.includes("p1") ? window.innerWidth >= 1200 ? `paragraph-show` : `` : ``}`}>
                             <p>
                                 I have a BA in Chinese Language and Literature from Beijing Language and Culture University (2010-2014), and an MS in Teaching and Curriculum from Syracuse University (2014-2016). Currently I am pursuing my second masters in Design and Development of Digital Games at Columbia Unviersity (2017-now).
                             </p>
                         </div>
                     </div>
-                    <div className='scroll scroll-p1'>
+                    <div className={`scroll scroll-p1 ${this.props.showParaId.includes("p1") ? window.innerWidth < 1200 ? `scroll-show` : `` : ``}`}>
                         <p>
                             I have a BA in Chinese Language and Literature from Beijing Language and Culture University (2010-2014), and an MS from Teaching and Curriculum in Syracuse University (2014-2016). Currently I am pursuing my second masters in Design and Development of Digital Games at Columbia Unviersity (2017-now).
                         </p>
                     </div>
-                    <div className="paragraphs" id="p2">
-                        <div className='paragraph-title title-p2'>
+                    <div className={`paragraphs ${this.props.showParaId.includes("p2") ? `selection` : ``}`} id="p2" 
+                        onClick = {() => this.props.showOrHideParagraph("p2")}>
+                        <div className={`paragraph-title title-p2 ${this.props.showParaId.includes("p2") ? window.innerWidth >= 1200 ? `title-hide` : `` : ``}`}>
                             <h2>Web Development</h2>
                         </div>
                         <div className='image img-2'>
                         </div>
-                        <div className='paragraph-single single-p2'>
+                        <div className={`paragraph-single single-p2 ${this.props.showParaId.includes("p2") ? window.innerWidth >= 1200 ? `paragraph-show` : `` : ``}`}>
                             <p>
                                 I gained most of my web development skills through Web Development Immersive program at General Assembly, after which I am able to develop my own web applications. I am able to work as a full-stack web developer and I keep updating my projects, implementing new skills that I would learn in the future.
                             </p>
                         </div>
                     </div>
-                    <div className='scroll scroll-p2'>
+                    <div className={`scroll scroll-p2 ${this.props.showParaId.includes("p2") ? window.innerWidth < 1200 ? `scroll-show` : `` : ``}`}>
                         <p>
                             I gained most of my web development skills through Web Development Immersive program at General Assembly, after which I am able to develop my own web applications. I am able to work as a full-stack web developer and I keep updating my projects, implementing new skills that I would learn in the future.
                         </p>
                     </div>
-                    <div className="paragraphs" id="p3">
-                        <div className='paragraph-title title-p3'>
+                    <div className={`paragraphs ${this.props.showParaId.includes("p3") ? `selection` : ``}`} id="p3" 
+                        onClick = {() => this.props.showOrHideParagraph("p3")}>
+                        <div className={`paragraph-title title-p3 ${this.props.showParaId.includes("p3") ? window.innerWidth >= 1200 ? `title-hide` : `` : ``}`}>
                             <h2>Unity Development</h2>
                         </div>
                         <div className='image img-3'>
                         </div>
-                        <div className='paragraph-single single-p3'>
+                        <div className={`paragraph-single single-p3 ${this.props.showParaId.includes("p3") ? window.innerWidth >= 1200 ? `paragraph-show` : `` : ``}`}>
                             <p>
                                 I taught myself C# and Unity development during the masters program of Design and Dev of Digital Games at Columbia University. I am excited to program various interactions/logics of the games, especially AR/VR development.
                             </p>
                         </div>
                     </div>
-                    <div className='scroll scroll-p3'>
+                    <div className={`scroll scroll-p3 ${this.props.showParaId.includes("p3") ? window.innerWidth < 1200 ? `scroll-show` : `` : ``}`}>
                         <p>
                             I taught myself C# and Unity development during the masters program of Design and Dev of Digital Games at Columbia University. I am excited to program various interactions/logics of the games, especially AR/VR development.
                         </p>
                     </div>
-                    <div className="paragraphs" id="p4">
-                        <div className='paragraph-title title-p4'>
+                    <div className={`paragraphs ${this.props.showParaId.includes("p4") ? `selection` : ``}`} id="p4" 
+                        onClick = {() => this.props.showOrHideParagraph("p4")}>
+                        <div className={`paragraph-title title-p4 ${this.props.showParaId.includes("p4") ? window.innerWidth >= 1200 ? `title-hide` : `` : ``}`}>
                             <h2>Teaching Experience</h2>
                         </div>
                         <div className='image img-4'>
                         </div>
-                        <div className='paragraph-single single-p4'>
+                        <div className={`paragraph-single single-p4 ${this.props.showParaId.includes("p4") ? window.innerWidth >= 1200 ? `paragraph-show` : `` : ``}`}>
                             <p>
                                 In Beijing, China, Mandarin teacher in RICH summer camps and volunteer teacher for a non-profit educational orgnization INCLUDED with students of grade 2-3. Also, I worked as a pre-school teacher at River School in Jersey City and a Mandarin teacher at Hudsonway Immersion School in NYC.
                             </p>
                         </div>
                     </div>
-                    <div className='scroll scroll-p4'>
+                    <div className={`scroll scroll-p4 ${this.props.showParaId.includes("p4") ? window.innerWidth < 1200 ? `scroll-show` : `` : ``}`}>
                         <p>
                             In Beijing, China, Mandarin teacher in RICH summer camps and volunteer teacher for a non-profit educational orgnization INCLUDED with students of grade 2-3. Also, I worked as a pre-school teacher at River School in Jersey City and a Mandarin teacher at Hudsonway Immersion School in NYC.
                         </p>
                     </div>
-                    <div className="paragraphs" id='p5'>
-                        <div className='paragraph-title title-p5'>
+                    <div className={`paragraphs ${this.props.showParaId.includes("p5") ? `selection` : ``}`} id='p5' 
+                        onClick = {() => this.props.showOrHideParagraph("p5")}>
+                        <div className={`paragraph-title title-p5 ${this.props.showParaId.includes("p5") ? window.innerWidth >= 1200 ? `title-hide` : `` : ``}`}>
                             <h2>Skills</h2>
                         </div>
                         <div className='image img-5'>
                         </div>
-                        <div className='paragraph-single single-p5'>
+                        <div className={`paragraph-single single-p5 ${this.props.showParaId.includes("p5") ? window.innerWidth >= 1200 ? `paragraph-show` : `` : ``}`}>
                             <div className='skill-single skill-html'><div className='skill-name'>HTML</div></div>
                             <div className='skill-single skill-css'><div className='skill-name'>CSS</div></div>
                             <div className='skill-single skill-js'><div className='skill-name'>Javascript</div></div>
@@ -100,7 +105,7 @@ class About extends Component {
                             <div className='skill-single skill-vuforia'><div className='skill-name'>Vuforia</div></div>
                         </div>
                     </div>
-                    <div className='scroll scroll-p5'>
+                    <div className={`scroll scroll-p5 ${this.props.showParaId.includes("p5") ? window.innerWidth < 1200 ? `scroll-show` : `` : ``}`}>
                         <div className='skill-single skill-html'><div className='skill-name'>HTML</div></div>
                         <div className='skill-single skill-css'><div className='skill-name'>CSS</div></div>
                         <div className='skill-single skill-js'><div className='skill-name'>Javascript</div></div>

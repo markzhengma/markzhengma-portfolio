@@ -3,17 +3,17 @@ import React, { Component } from 'react';
 class Home extends Component {
     render(){
         return (
-            <div className="home">
+            <div className="home" ref={this.props.homeRef}>
                 <div className = 'home-box-spacer'>
                 </div>
                 <div className = 'home-box'>
                     <div className='word-box'>
                         <h2>Hi. I'm Mark</h2>
-                        <t>Web Developer</t>
-                        <t>Unity Developer</t>
-                        <t>Teacher</t>
+                        <b>Web Developer</b>
+                        <b>Unity Developer</b>
+                        <b>Teacher</b>
                     </div>
-                    <div className="project" id = 'latest-project'>
+                    <div className="project" id = 'latest-project' onClick = {() =>this.props.scrollToRef(this.props.workRef)}>
                         <div className='project-name' id = 'latest-name'>
                             <h3>Recent Project</h3>
                         </div>

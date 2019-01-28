@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Contact extends Component {
     render(){
         return (
-            <div className='contact'>
+            <div className='contact' ref = {this.props.contactRef}>
                 <div className="spacer contact-spacer">
                 </div>
                 <h2><i className="fa fa-phone fa-fw" aria-hidden="true"></i>Contact Me</h2>

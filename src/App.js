@@ -9,9 +9,15 @@ import Contact from './Components/Contact';
 class App extends Component {
   constructor(){
     super();
+    this.homeRef = React.createRef();
+    this.aboutRef = React.createRef();
+    this.workRef = React.createRef();
+    this.contactRef = React.createRef();
     this.state = {
       showResume: false,
       selectedWork: null,
+      showParaId: [],
+      showTechId: null,
       workData: [
         {
             id: 15,
@@ -164,7 +170,7 @@ class App extends Component {
         {
             id: 2,
             title: "Language Studio",
-            tech: ["Ruby on Rails"],
+            tech: ["Ruby on Rails", "PostgreSQL", "Pearson API"],
             btnOne: {
                 text: "Website",
                 url: "https://language-studio.herokuapp.com/"
@@ -189,11 +195,46 @@ class App extends Component {
         },
       ]
     }
+    this.scrollToRef = this.scrollToRef.bind(this);
+    this.showOrHideParagraph = this.showOrHideParagraph.bind(this);
+    this.showTech = this.showTech.bind(this);
+    this.hideTech = this.hideTech.bind(this);
   }
 
   toggleShowResume = () => {
     this.setState({
       showResume: !this.state.showResume
+    })
+  }
+
+  scrollToRef = (ref) => {
+    window.scrollTo({top: `${ref.current.offsetTop}`, behavior: 'smooth'})
+  }
+
+  showOrHideParagraph = (id) => {
+    const idArr = this.state.showParaId;
+    if(!this.state.showParaId.includes(id)){
+      idArr.push(id);
+      this.setState({
+        showParaId: idArr,
+      })
+    }else{
+      idArr.splice(idArr.indexOf(id), 1);
+      this.setState({
+        showParaId: idArr,
+      })
+    }
+  }
+
+  showTech = (id) => {
+    this.setState({
+      showTechId: id,
+    })
+  }
+
+  hideTech = (id) => {
+    this.setState({
+      showTechId: null,
     })
   }
 
@@ -204,11 +245,33 @@ class App extends Component {
         <UI 
           showResume = {this.state.showResume}
           toggleShowResume = {this.toggleShowResume}
+          homeRef = {this.homeRef}
+          aboutRef = {this.aboutRef}
+          workRef = {this.workRef}
+          contactRef = {this.contactRef}
+          scrollToRef = {this.scrollToRef}
         />
-        <Home recentWork = {this.state.workData[0]}/>
-        <About/>
-        <Work workData = {this.state.workData}/>
-        <Contact/>
+        <Home 
+          homeRef = {this.homeRef}
+          recentWork = {this.state.workData[0]}
+          scrollToRef = {this.scrollToRef}
+          workRef = {this.workRef}
+        />
+        <About 
+          aboutRef = {this.aboutRef}
+          showParaId = {this.state.showParaId}
+          showOrHideParagraph = {this.showOrHideParagraph}
+        />
+        <Work 
+          workRef = {this.workRef}
+          workData = {this.state.workData}
+          showTechId = {this.state.showTechId}
+          showTech = {this.showTech}
+          hideTech = {this.hideTech}
+        />
+        <Contact 
+          contactRef = {this.contactRef}
+        />
       </div>
     );
   }

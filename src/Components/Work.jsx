@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 
 class Work extends Component {
+    constructor(){
+        super();
+    }
     render(){
         return (
-            <div className="work">
+            <div className="work" ref = {this.props.workRef}>
                 <div className="spacer work-spacer">
                 </div>
                 <h2><i className="fas fa-pencil-alt"></i>My Work</h2>
@@ -14,11 +17,19 @@ class Work extends Component {
                                 <div className={`project-name project-name-${project.id}`}>
                                     <h3>{project.title}</h3>
                                 </div>
-                                <div className={`project-pic project-pic-${project.id}`}>
-                                    <div className={`tech-used tech-${project.id}`}>
+                                <div 
+                                    className={`project-pic project-pic-${project.id}`} 
+                                    onMouseEnter = {() => this.props.showTech(project.id)} 
+                                    onMouseLeave = {() => this.props.hideTech(project.id)}
+                                >
+                                    <div className={`tech-used tech-${project.id} ${this.props.showTechId ? this.props.showTechId === project.id ? `show-tech` : `` : ``}`}>
                                         <h5>Technology:</h5>
                                         <p>
-                                            Technologies
+                                            {project.tech.map(tech => {
+                                                return(
+                                                    <span key = {project.tech.indexOf(tech)}>{tech}<br/></span>
+                                                )
+                                            })}
                                         </p>
                                     </div>
                                 </div>
@@ -26,16 +37,16 @@ class Work extends Component {
                                     <div className='project-button-list'>
                                         <div className='project-button'>
                                                 <a href={project.btnOne.url} target='_blank'>
-                                                    <h5>{project.btnOne.text}</h5>
+                                                    <b>{project.btnOne.text}</b>
                                                 </a>
                                         </div>
-                                        <div className='project-button'><a href={project.btnTwo.url} target='_blank'><h5>{project.btnTwo.text}</h5></a></div>
+                                        <div className='project-button'><a href={project.btnTwo.url} target='_blank'><b>{project.btnTwo.text}</b></a></div>
                                     </div>
                                     :
                                     <div className='project-button-list'>
                                         <div className='project-button' style = {{'width': "360px"}}>
                                                 <a href={project.btnOne.url} target='_blank'>
-                                                    <h5>{project.btnOne.text}</h5>
+                                                    <b>{project.btnOne.text}</b>
                                                 </a>
                                         </div>
                                     </div>
