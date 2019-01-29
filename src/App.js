@@ -5,8 +5,7 @@ import Home from './Components/Home';
 import About from './Components/About';
 import Work from './Components/Work';
 import Contact from './Components/Contact';
-import * as Scroll from 'react-scroll';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { scroller } from 'react-scroll';
 
 class App extends Component {
   constructor(){

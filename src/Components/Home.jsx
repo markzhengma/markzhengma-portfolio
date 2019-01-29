@@ -10,7 +10,7 @@ class Home extends Component {
                 <Element className = 'home-box-spacer' name = "home-spacer"/>
                 <div className = 'home-box'>
                     <div className='word-box'>
-                        <h2>Hi. I'm Mark</h2>
+                        <h2>Mark Zheng Ma</h2>
                         <b>Web Developer</b>
                         <b>Unity Developer</b>
                         <b>Teacher</b>

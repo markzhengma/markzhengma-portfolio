@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { Element } from 'react-scroll';
 
 class Work extends Component {
-    constructor(){
-        super();
-    }
     render(){
         return (
             <div className="work" 
