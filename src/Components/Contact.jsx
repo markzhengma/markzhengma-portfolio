@@ -6,9 +6,8 @@ class Contact extends Component {
         return (
             <div>
                 <div className='contact' 
-                    // ref = {this.props.contactRef}
                 >
-                    <div className = "contact-container">
+                    {/* <div className = "contact-container"> */}
                         <Element className="spacer contact-spacer" name = "contact-spacer"/>
                         <h2><i className="fa fa-phone fa-fw" aria-hidden="true"></i>Contact Me</h2>
                         <form className='contact-form' method="POST" action="http://formspree.io/mazheng1022@hotmail.com">
@@ -17,8 +16,7 @@ class Contact extends Component {
                             <button type="submit">Send</button>
                         </form>
                     </div>
-                </div> 
-                {/* <div className="spacer contact-spacer"/> */}
+                {/* </div>  */}
             </div>
         )
     }
