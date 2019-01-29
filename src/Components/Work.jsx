@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Element } from 'react-scroll';
 
 class Work extends Component {
     constructor(){
@@ -6,9 +7,10 @@ class Work extends Component {
     }
     render(){
         return (
-            <div className="work" ref = {this.props.workRef}>
-                <div className="spacer work-spacer">
-                </div>
+            <div className="work" 
+                // ref = {this.props.workRef}
+            >
+                <Element className="spacer work-spacer" name = "work-spacer"/>
                 <h2><i className="fas fa-pencil-alt"></i>My Work</h2>
                 <div className="project-list">
                     {this.props.workData.map(project => {

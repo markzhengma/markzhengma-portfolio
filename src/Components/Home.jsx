@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import { Element } from 'react-scroll';
 
 class Home extends Component {
     render(){
         return (
-            <div className="home" ref={this.props.homeRef}>
-                <div className = 'home-box-spacer'>
-                </div>
+            <div className="home" 
+                // ref={this.props.homeRef}
+                >
+                <Element className = 'home-box-spacer' name = "home-spacer"/>
                 <div className = 'home-box'>
                     <div className='word-box'>
                         <h2>Hi. I'm Mark</h2>
@@ -13,7 +15,10 @@ class Home extends Component {
                         <b>Unity Developer</b>
                         <b>Teacher</b>
                     </div>
-                    <div className="project" id = 'latest-project' onClick = {() =>this.props.scrollToRef(this.props.workRef)}>
+                    <div className="project" id = 'latest-project' 
+                        // onClick = {() =>this.props.scrollToRef(this.props.workRef)}
+                        onClick = {() => this.props.scrollToElement("work-spacer")}
+                        >
                         <div className='project-name' id = 'latest-name'>
                             <h3>Recent Project</h3>
                         </div>

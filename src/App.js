@@ -5,14 +5,16 @@ import Home from './Components/Home';
 import About from './Components/About';
 import Work from './Components/Work';
 import Contact from './Components/Contact';
+import * as Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 class App extends Component {
   constructor(){
     super();
-    this.homeRef = React.createRef();
-    this.aboutRef = React.createRef();
-    this.workRef = React.createRef();
-    this.contactRef = React.createRef();
+    // this.homeRef = React.createRef();
+    // this.aboutRef = React.createRef();
+    // this.workRef = React.createRef();
+    // this.contactRef = React.createRef();
     this.state = {
       showResume: false,
       selectedWork: null,
@@ -195,10 +197,11 @@ class App extends Component {
         },
       ]
     }
-    this.scrollToRef = this.scrollToRef.bind(this);
+    // this.scrollToRef = this.scrollToRef.bind(this);
     this.showOrHideParagraph = this.showOrHideParagraph.bind(this);
     this.showTech = this.showTech.bind(this);
     this.hideTech = this.hideTech.bind(this);
+    this.scrollToElement = this.scrollToElement.bind(this);
   }
 
   toggleShowResume = () => {
@@ -207,8 +210,19 @@ class App extends Component {
     })
   }
 
-  scrollToRef = (ref) => {
-    window.scrollTo({top: `${ref.current.offsetTop}`, behavior: 'smooth'})
+  // scrollToRef = (ref) => {
+  //   window.scrollTo({top: `${ref.current.offsetTop}`, behavior: 'smooth'})
+  //   scroller.scrollTo(ref, {
+  //     duration: 1000,
+  //     smooth: true
+  //   })
+  // }
+
+  scrollToElement = (name) => {
+    scroller.scrollTo(name, {
+      duration: 800,
+      smooth: true,
+    })
   }
 
   showOrHideParagraph = (id) => {
@@ -245,32 +259,34 @@ class App extends Component {
         <UI 
           showResume = {this.state.showResume}
           toggleShowResume = {this.toggleShowResume}
-          homeRef = {this.homeRef}
-          aboutRef = {this.aboutRef}
-          workRef = {this.workRef}
-          contactRef = {this.contactRef}
-          scrollToRef = {this.scrollToRef}
+          scrollToElement = {this.scrollToElement}
+          // homeRef = {this.homeRef}
+          // aboutRef = {this.aboutRef}
+          // workRef = {this.workRef}
+          // contactRef = {this.contactRef}
+          // scrollToRef = {this.scrollToRef}
         />
         <Home 
-          homeRef = {this.homeRef}
+          // homeRef = {this.homeRef}
           recentWork = {this.state.workData[0]}
-          scrollToRef = {this.scrollToRef}
-          workRef = {this.workRef}
+          scrollToElement = {this.scrollToElement}
+          // scrollToRef = {this.scrollToRef}
+          // workRef = {this.workRef}
         />
         <About 
-          aboutRef = {this.aboutRef}
+          // aboutRef = {this.aboutRef}
           showParaId = {this.state.showParaId}
           showOrHideParagraph = {this.showOrHideParagraph}
         />
         <Work 
-          workRef = {this.workRef}
+          // workRef = {this.workRef}
           workData = {this.state.workData}
           showTechId = {this.state.showTechId}
           showTech = {this.showTech}
           hideTech = {this.hideTech}
         />
         <Contact 
-          contactRef = {this.contactRef}
+          // contactRef = {this.contactRef}
         />
       </div>
     );

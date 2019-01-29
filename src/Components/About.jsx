@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
+import { Element } from 'react-scroll';
 
 class About extends Component {
     render() {
         return (
-            <div className="about" ref = {this.props.aboutRef}>
-                <div className="spacer about-spacer">
-                </div>
-                    <h2><i className="fa fa-id-card fa-fw" aria-hidden="true"></i>About Me</h2>
+            <div className="about" 
+                // ref = {this.props.aboutRef}
+            >
+                <Element className="spacer about-spacer" name = "about-spacer"/>
+                <h2><i className="fa fa-id-card fa-fw" aria-hidden="true"></i>About Me</h2>
                 <div className='paragraph-list'>
                     <div className={`paragraphs ${this.props.showParaId.includes("p1") ? `selection` : ``}`} id="p1" 
                         onClick = {() => this.props.showOrHideParagraph("p1")}>

@@ -8,11 +8,12 @@ class Home extends Component {
         return (
             <div className = {`ui ${this.props.showResume ? "ui-show" : ""}`}>
                 <Header
-                    homeRef = {this.props.homeRef}
-                    aboutRef = {this.props.aboutRef}
-                    workRef = {this.props.workRef}
-                    contactRef = {this.props.contactRef}
-                    scrollToRef = {this.props.scrollToRef}
+                    // homeRef = {this.props.homeRef}
+                    // aboutRef = {this.props.aboutRef}
+                    // workRef = {this.props.workRef}
+                    // contactRef = {this.props.contactRef}
+                    // scrollToRef = {this.props.scrollToRef}
+                    scrollToElement = {this.props.scrollToElement}
                 />
                 <Resume 
                     showResume = {this.props.showResume}
