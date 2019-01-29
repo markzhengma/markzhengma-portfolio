@@ -13,7 +13,8 @@ class Work extends Component {
                 <Element className="spacer work-spacer" name = "work-spacer"/>
                 <h2><i className="fas fa-pencil-alt"></i>My Work</h2>
                 <div className="project-list">
-                    {this.props.workData.map(project => {
+                    {this.props.workData ?
+                        this.props.workData.map(project => {
                         return(
                             <div className="project" key = {project.id}>
                                 <div className={`project-name project-name-${project.id}`}>
@@ -55,7 +56,7 @@ class Work extends Component {
                                 }
                             </div>
                         )
-                    })}
+                    }) : ""}
                     {/* <div className="project">
                         <div className='project-name project-name-15'>
                             <h3>Witch's Grotto</h3>
