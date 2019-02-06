@@ -252,32 +252,43 @@ h1{
   position: absolute; */
 }
 #latest-project{
-  height: 34vh;
-  width: 34vh;
-  min-width: 275px;
-  min-height: 275px;
   margin-top: 20px;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-image: url('pics/chalkborder.jpg');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 #latest-name{
-  height: 5vh;
-  width: 30vh;
-  min-width: 225px;
-  min-height: 37px;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.6);
+  color: white;
   background: rgba(0,0,0,0.6);
   color: white;
 }
 #latest-pic{
-  height: 20vh;
-  width: 30vh;
-  min-width: 225px;
-  min-height: 150px;
+  height: 180px;
+  width: 220px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0.7);
+  cursor: pointer;
+  box-sizing: border-box;
   position: unset;
-}
-#latest-tech{
-  height: 20vh;
-  width: 30vh;
-  min-width: 225px;
-  min-height: 150px;
 }
 .home h2{
   font-size: 45px;
@@ -860,32 +871,34 @@ h1{
       font-size: 30px;
   }
   #latest-project{
-      height: 47vh;
-      width: 47vh;
-      min-width: 275px;
-      min-height: 275px;
       margin-top: 20px;
+      height: 350px;
+      width: 430px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      background-image: url('pics/chalkborder.jpg');
+      background-position: center;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
   }
   #latest-name{
-      height: 5vh;
-      width: 40vh;
-      min-width: 225px;
-      min-height: 37px;
-      background: rgba(0,0,0,0.6);
-      color: white;
+      height: 50px;
+      width: 360px;
+      font-size: 30px;
   }
   #latest-pic{
-      height: 30vh;
-      width: 40vh;
-      min-width: 225px;
-      min-height: 150px;
+      height: 200px;
+      width: 360px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: rgba(0,0,0,0.7);
+      cursor: pointer;
+      box-sizing: border-box;
       position: unset;
-  }
-  #latest-tech{
-      height: 30vh;
-      width: 40vh;
-      min-width: 225px;
-      min-height: 150px;
   }
   .resume-content{
       width: 70%;
