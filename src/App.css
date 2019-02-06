@@ -416,16 +416,13 @@ h1{
   background-image: url('pics/ar-pet.jpg');
 }
 .project-pic-4{
-  background-image: url('pics/grandmaster.png');
-}
-.project-pic-3{
-  background-image: url('pics/poke-fight.jpg');
+  background-image: url('pics/grandmaster.jpg');
 }
 .project-pic-2{
   background-image: url('pics/language-studio.jpg');
 }
 .project-pic-1{
-  background-image: url('pics/word-hero.png');
+  background-image: url('pics/word-hero.jpg');
 }
 .tech-used{
   height: 200px;
