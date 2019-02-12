@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+}
+.loading-page{
+    font-family: 'Cabin Sketch', cursive;
+    height: 100vh;
+    width: 100vw;
+    min-height: 400px;
+    background-image: url('chalk_cover.png'), url('./chalkboard.jpg');
+    background-position: left bottom;
+    background-size: auto 70%, 100% 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(31, 31, 31);
+    font-size:30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.loading-icon{
+    height: 40px;
+    width: 40px;
+    background-image: url('./icon.png');
+    background-color: rgba(0, 0, 0, 0);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: shrink-enlarge;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes shrink-enlarge{
+    from{
+        background-size: 100%;
+    }
+    to{
+        background-size: 5%;
+    }
+}
