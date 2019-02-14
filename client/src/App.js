@@ -42,8 +42,8 @@ class App extends Component {
                 url: "https://youtu.be/au07OoysCdU"
             },
             btnTwo: {
-                text: "Download",
-                url: "https://drive.google.com/drive/folders/1Bw96mo5-c5yn7ukuMzI-R8j6iuSF2I-O?usp=sharing"
+                text: "Itch.io",
+                url: "https://markzhengma.itch.io/staywithme"
             }
         },
         {
@@ -138,7 +138,7 @@ class App extends Component {
             title: "Zombie Run",
             tech: ["Unity", "C#"],
             btnOne: {
-                text: "Website",
+                text: "Itch.io",
                 url: "https://markzhengma.itch.io/zombierun"
             },
             btnTwo: {
