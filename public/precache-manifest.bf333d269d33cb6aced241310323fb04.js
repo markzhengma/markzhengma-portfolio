@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/su.e3f8f8b3.jpg"
   },
   {
-    "revision": "584460265138c4056b14",
+    "revision": "f23e949178e4ae219a62",
     "url": "/static/css/main.88773e77.chunk.css"
   },
   {
@@ -20,16 +20,16 @@ self.__precacheManifest = [
     "url": "/static/media/chalkborder.b73ea13c.jpg"
   },
   {
-    "revision": "fbe01551b3091103d2655e6be9d8cd9f",
-    "url": "/static/media/css.fbe01551.png"
-  },
-  {
     "revision": "6f6e9f481a26e14e977ef3e888ffc333",
     "url": "/static/media/react.6f6e9f48.png"
   },
   {
     "revision": "3ad7d4623b8bb182f4cccb51917577d1",
     "url": "/static/media/sql.3ad7d462.png"
+  },
+  {
+    "revision": "fbe01551b3091103d2655e6be9d8cd9f",
+    "url": "/static/media/css.fbe01551.png"
   },
   {
     "revision": "bc989e9afe79d919e00e46cd15dbf29b",
@@ -80,8 +80,8 @@ self.__precacheManifest = [
     "url": "/static/media/js.e797a8c5.png"
   },
   {
-    "revision": "584460265138c4056b14",
-    "url": "/static/js/main.58446026.chunk.js"
+    "revision": "f23e949178e4ae219a62",
+    "url": "/static/js/main.f23e9491.chunk.js"
   },
   {
     "revision": "a803e97a7dc10b7037ed2fff7253a9e1",
@@ -104,16 +104,16 @@ self.__precacheManifest = [
     "url": "/static/media/chalkboard.0fc0d98c.jpg"
   },
   {
-    "revision": "97ee7cf914cc43eaba4d97f961638d30",
-    "url": "/static/media/cuevent.97ee7cf9.jpg"
-  },
-  {
     "revision": "4ca16b236d7bd0570b808b56ad8b34fd",
     "url": "/static/media/geekolympics.4ca16b23.jpg"
   },
   {
     "revision": "b0d84734a9fc9c24115f0ac8448b2585",
     "url": "/static/media/ar-pet.b0d84734.jpg"
+  },
+  {
+    "revision": "97ee7cf914cc43eaba4d97f961638d30",
+    "url": "/static/media/cuevent.97ee7cf9.jpg"
   },
   {
     "revision": "fa3006ff482b6bb8979a7d385ae21c19",
@@ -156,7 +156,7 @@ self.__precacheManifest = [
     "url": "/static/media/chalk_cover.a977349c.png"
   },
   {
-    "revision": "467d817992ac7b5cfaf466124ca8f9a0",
+    "revision": "bc323f4af01070de3773b3a728573079",
     "url": "/index.html"
   }
 ];
