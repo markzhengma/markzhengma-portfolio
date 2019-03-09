@@ -21,9 +21,22 @@ class App extends Component {
       showTechId: null,
       workData: [
         {
+            id: 16,
+            title: "WeBubbleTwo",
+            tech: ["Unity", "C#", "Independent Work"],
+            btnOne: {
+                text: "Video",
+                url: "https://youtu.be/oJdBs7qOQos"
+            },
+            btnTwo: {
+                text: "Itch.io",
+                url: "https://markzhengma.itch.io/we-bubble-two"
+            }
+        },
+        {
             id: 15,
             title: "Witch's Grotto",
-            tech: ["Unity", "C#", "HTC Plugin"],
+            tech: ["Unity", "C#", "HTC Plugin", "Reality Virtually Hackathon"],
             btnOne: {
                 text: "DevPost",
                 url: "https://devpost.com/software/virtual-escape-room-bj9lwv"
@@ -75,7 +88,7 @@ class App extends Component {
         {
             id: 11,
             title: "Wechat Official Shell",
-            tech: ["ReactJS", "NodeJS", "PostgreSQL", "BMap API"],
+            tech: ["ReactJS", "NodeJS", "PostgreSQL", "BMap API", "Independent Work"],
             btnOne: {
                 text: "Website",
                 url: "https://wechat-official-shell.herokuapp.com"
@@ -136,7 +149,7 @@ class App extends Component {
         {
             id: 6,
             title: "Zombie Run",
-            tech: ["Unity", "C#"],
+            tech: ["Unity", "C#", "Independent Work"],
             btnOne: {
                 text: "Itch.io",
                 url: "https://markzhengma.itch.io/zombierun"

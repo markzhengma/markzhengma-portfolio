@@ -23,7 +23,7 @@ class Work extends Component {
                                     onMouseLeave = {() => this.props.hideTech(project.id)}
                                 >
                                     <div className={`tech-used tech-${project.id} ${this.props.showTechId ? this.props.showTechId === project.id ? `show-tech` : `` : ``}`}>
-                                        <h5>Technology:</h5>
+                                        <h5>Tech Highlights:</h5>
                                         <p>
                                             {project.tech.map(tech => {
                                                 return(

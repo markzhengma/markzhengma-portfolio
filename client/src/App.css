@@ -391,6 +391,9 @@ h1{
   color: white;
   width: 100%;
 }
+.project-pic-16{
+  background-image: url('pics/we_bubble_two.jpg');
+}
 .project-pic-15{
   background-image: url('pics/escape_the_witch\'s_grotto.jpg');
 }
