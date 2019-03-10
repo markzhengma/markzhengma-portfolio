@@ -20,28 +20,28 @@ self.__precacheManifest = [
     "url": "/static/media/chalkborder.b73ea13c.jpg"
   },
   {
-    "revision": "6f6e9f481a26e14e977ef3e888ffc333",
-    "url": "/static/media/react.6f6e9f48.png"
-  },
-  {
     "revision": "fbe01551b3091103d2655e6be9d8cd9f",
     "url": "/static/media/css.fbe01551.png"
+  },
+  {
+    "revision": "6f6e9f481a26e14e977ef3e888ffc333",
+    "url": "/static/media/react.6f6e9f48.png"
   },
   {
     "revision": "3ad7d4623b8bb182f4cccb51917577d1",
     "url": "/static/media/sql.3ad7d462.png"
   },
   {
-    "revision": "bc989e9afe79d919e00e46cd15dbf29b",
-    "url": "/static/media/socket.bc989e9a.png"
+    "revision": "49a26ccddaad434f9f308e27bc7778b4",
+    "url": "/static/media/ruby.49a26ccd.png"
   },
   {
     "revision": "e7b8fcd4ceb430ffc60ed55e5ab98fa5",
     "url": "/static/media/csharp.e7b8fcd4.png"
   },
   {
-    "revision": "49a26ccddaad434f9f308e27bc7778b4",
-    "url": "/static/media/ruby.49a26ccd.png"
+    "revision": "bc989e9afe79d919e00e46cd15dbf29b",
+    "url": "/static/media/socket.bc989e9a.png"
   },
   {
     "revision": "50d0834e3e146ad945ee8b4f89b5b309",
@@ -108,16 +108,16 @@ self.__precacheManifest = [
     "url": "/static/media/chalkboard.0fc0d98c.jpg"
   },
   {
+    "revision": "fa3006ff482b6bb8979a7d385ae21c19",
+    "url": "/static/media/language-studio.fa3006ff.jpg"
+  },
+  {
     "revision": "4ca16b236d7bd0570b808b56ad8b34fd",
     "url": "/static/media/geekolympics.4ca16b23.jpg"
   },
   {
     "revision": "b0d84734a9fc9c24115f0ac8448b2585",
     "url": "/static/media/ar-pet.b0d84734.jpg"
-  },
-  {
-    "revision": "fa3006ff482b6bb8979a7d385ae21c19",
-    "url": "/static/media/language-studio.fa3006ff.jpg"
   },
   {
     "revision": "97ee7cf914cc43eaba4d97f961638d30",
