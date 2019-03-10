@@ -1,9 +1,14 @@
 require('newrelic');
+var http = require("http");
 const express = require('express');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
+
+setInterval(function() {
+    http.get("http://markzhengma.com");
+}, 300000);
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
