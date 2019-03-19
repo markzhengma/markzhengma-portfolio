@@ -538,7 +538,7 @@ h1{
 .img-5{
   background-image: url('pics/classroom.jpg');
 }
-#p1{
+#p5{
   border-top: 2px solid white;
   margin: 2vh 0 0 0;
 }
@@ -571,7 +571,6 @@ h1{
 .scroll-p5{
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 80px 0;
 }
 .skill-single{
   height: 70px;
@@ -635,6 +634,9 @@ h1{
 }
 .skill-vuforia{
   background-image: url("pics/vuforia.png");
+}
+.skill-git{
+  background-image: url("pics/git.png");
 }
 .skill-name{
   height: 70px;
