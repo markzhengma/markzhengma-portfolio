@@ -228,6 +228,7 @@ class App extends Component {
     this.showTech = this.showTech.bind(this);
     this.hideTech = this.hideTech.bind(this);
     this.scrollToElement = this.scrollToElement.bind(this);
+    this.switchLanguage = this.switchLanguage.bind(this);
   }
 
   toggleShowResume = () => {
@@ -278,6 +279,12 @@ class App extends Component {
     })
   }
 
+  switchLanguage = () => {
+    this.setState({
+      isEnglish: !this.state.isEnglish
+    })
+  }
+
   render() {
     return (
       <div className="App">
@@ -287,6 +294,7 @@ class App extends Component {
           showResume = {this.state.showResume}
           toggleShowResume = {this.toggleShowResume}
           scrollToElement = {this.scrollToElement}
+          switchLanguage = {this.switchLanguage}
           // homeRef = {this.homeRef}
           // aboutRef = {this.aboutRef}
           // workRef = {this.workRef}

@@ -9,10 +9,28 @@ class Contact extends Component {
                 >
                     {/* <div className = "contact-container"> */}
                         <Element className="spacer contact-spacer" name = "contact-spacer"/>
-                        <h2><i className="fa fa-phone fa-fw" aria-hidden="true"></i>Contact Me</h2>
+                        <h2><i className="fa fa-phone fa-fw" aria-hidden="true"></i>
+                            {this.props.isEnglish ? 
+                                "Contact Me"
+                                :
+                                "留言"
+                            }
+                        </h2>
                         <form className='contact-form' method="POST" action="http://formspree.io/mazheng1022@hotmail.com">
-                            <input type="email" name="email" placeholder="Your Email"/>
-                            <textarea name="message" placeholder="Please leave your message."></textarea>
+                            <input type="email" name="email" placeholder=
+                                {this.props.isEnglish ? 
+                                    "Your Email"
+                                    :
+                                    "您的邮箱地址"
+                                }
+                            />
+                            <textarea name="message" placeholder=
+                            {this.props.isEnglish ? 
+                                "Please leave your message, thank you."
+                                :
+                                "请在这里留言，谢谢。"
+                            }
+                            ></textarea>
                             <button type="submit">Send</button>
                         </form>
                     </div>

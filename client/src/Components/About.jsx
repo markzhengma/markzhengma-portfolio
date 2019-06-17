@@ -8,12 +8,20 @@ class About extends Component {
                 // ref = {this.props.aboutRef}
             >
                 <Element className="spacer about-spacer" name = "about-spacer"/>
-                <h2><i className="fa fa-id-card fa-fw" aria-hidden="true"></i>About Me</h2>
+                {this.props.isEnglish ? 
+                    <h2><i className="fa fa-id-card fa-fw" aria-hidden="true"></i>About Me</h2>
+                    :
+                    <h2><i className="fa fa-id-card fa-fw" aria-hidden="true"></i>关于</h2>
+                }
                 <div className='paragraph-list'>
                     <div className={`paragraphs ${this.props.showParaId.includes("p5") ? `selection` : ``}`} id='p5' 
                         onClick = {() => this.props.showOrHideParagraph("p5")}>
                         <div className={`paragraph-title title-p5 ${this.props.showParaId.includes("p5") ? window.innerWidth >= 1200 ? `title-hide` : `` : ``}`}>
-                            <h2>Skills</h2>
+                            {this.props.isEnglish ? 
+                                <h2>Skills</h2>
+                                :
+                                <h2>技能</h2>
+                            }
                         </div>
                         <div className='image img-5'>
                         </div>
@@ -57,74 +65,138 @@ class About extends Component {
                     <div className={`paragraphs ${this.props.showParaId.includes("p1") ? `selection` : ``}`} id="p1" 
                         onClick = {() => this.props.showOrHideParagraph("p1")}>
                         <div className={`paragraph-title title-p1 ${this.props.showParaId.includes("p1") ? window.innerWidth >= 1200 ? `title-hide` : `` : ``}`}>
-                            <h2>Education</h2>
+                            {this.props.isEnglish ? 
+                                <h2>Education</h2>
+                                :
+                                <h2>教育背景</h2>
+                            }
                         </div>
                         <div className='image img-1'>
                         </div>
                         <div className={`paragraph-single single-p1 ${this.props.showParaId.includes("p1") ? window.innerWidth >= 1200 ? `paragraph-show` : `` : ``}`}>
-                            <p>
-                                I have a BA in Chinese Language and Literature from Beijing Language and Culture University (2010-2014), and an MS in Teaching and Curriculum from Syracuse University (2014-2016). Currently I am pursuing my second masters in Design and Development of Digital Games at Columbia Unviersity (2017-now).
-                            </p>
+                            {this.props.isEnglish ? 
+                                <p>
+                                    BA in Chinese Language and Literature from Beijing Language and Culture University (2010-2014). <br/>MS in Teaching and Curriculum from Syracuse University (2014-2016). <br/>MA in Design and Development of Digital Games at Columbia Unviersity (2017-2019).
+                                </p>
+                                :
+                                <p>
+                                    本科：北京语言大学-汉语言文学专业 (2010-2014). <br/>硕士研究生1：雪城大学-教育学专业 (2014-2016). <br/>硕士研究生2：哥伦比亚大学：电子游戏开发与设计 (2017-2019).
+                                </p>
+                            }
                         </div>
                     </div>
                     <div className={`scroll scroll-p1 ${this.props.showParaId.includes("p1") ? window.innerWidth < 1200 ? `scroll-show` : `` : ``}`}>
-                        <p>
-                            I have a BA in Chinese Language and Literature from Beijing Language and Culture University (2010-2014), and an MS from Teaching and Curriculum in Syracuse University (2014-2016). Currently I am pursuing my second masters in Design and Development of Digital Games at Columbia Unviersity (2017-now).
-                        </p>
+                        {this.props.isEnglish ? 
+                            <p>
+                                BA in Chinese Language and Literature from Beijing Language and Culture University (2010-2014). <br/>MS in Teaching and Curriculum from Syracuse University (2014-2016). <br/>MA in Design and Development of Digital Games at Columbia Unviersity (2017-2019).
+                            </p>
+                            :
+                            <p>
+                                本科：北京语言大学-汉语言文学专业 (2010-2014). <br/>硕士研究生1：雪城大学-教育学专业 (2014-2016). <br/>硕士研究生2：哥伦比亚大学-电子游戏开发与设计 (2017-2019).
+                            </p>
+                        }
                     </div>
                     <div className={`paragraphs ${this.props.showParaId.includes("p2") ? `selection` : ``}`} id="p2" 
                         onClick = {() => this.props.showOrHideParagraph("p2")}>
                         <div className={`paragraph-title title-p2 ${this.props.showParaId.includes("p2") ? window.innerWidth >= 1200 ? `title-hide` : `` : ``}`}>
-                            <h2>Web Development</h2>
+                            {this.props.isEnglish ? 
+                                <h2>Web Development</h2>
+                                :
+                                <h2>网站开发经历</h2>
+                            }
                         </div>
                         <div className='image img-2'>
                         </div>
                         <div className={`paragraph-single single-p2 ${this.props.showParaId.includes("p2") ? window.innerWidth >= 1200 ? `paragraph-show` : `` : ``}`}>
-                            <p>
-                                I gained most of my web development skills through Web Development Immersive program at General Assembly, after which I am able to develop my own web applications. I am able to work as a full-stack web developer and I keep updating my projects, implementing new skills that I would learn in the future.
-                            </p>
+                            {this.props.isEnglish ? 
+                                <p>
+                                    I gained certificate of completion in Web Development Immersive program at General Assembly, after which I am able to develop my own web applications. I kept learning new skills after that and I am now working as a freelance developer.
+                                </p>
+                                :
+                                <p>
+                                    在General Assembly网站开发集训项目获得结业证书后，我学到了全站开发的专业技术，开始独立开发或参与开发各类全栈网站项目。之后继续学习各类开发技能，并接手各类freelance开发项目。
+                                </p>
+                            }
                         </div>
                     </div>
                     <div className={`scroll scroll-p2 ${this.props.showParaId.includes("p2") ? window.innerWidth < 1200 ? `scroll-show` : `` : ``}`}>
-                        <p>
-                            I gained most of my web development skills through Web Development Immersive program at General Assembly, after which I am able to develop my own web applications. I am able to work as a full-stack web developer and I keep updating my projects, implementing new skills that I would learn in the future.
-                        </p>
+                        {this.props.isEnglish ? 
+                            <p>
+                                I gained certificate of completion in Web Development Immersive program at General Assembly, after which I am able to develop my own web applications. I kept learning new skills after that and I am now working as a freelance developer.
+                            </p>
+                            :
+                            <p>
+                                在General Assembly网站开发集训项目获得结业证书后，我学到了全站开发的专业技术，开始独立开发或参与开发各类全栈网站项目。之后继续学习各类开发技能，并接手各类freelance开发项目。
+                            </p>
+                        }
                     </div>
                     <div className={`paragraphs ${this.props.showParaId.includes("p3") ? `selection` : ``}`} id="p3" 
                         onClick = {() => this.props.showOrHideParagraph("p3")}>
                         <div className={`paragraph-title title-p3 ${this.props.showParaId.includes("p3") ? window.innerWidth >= 1200 ? `title-hide` : `` : ``}`}>
-                            <h2>Unity Development</h2>
+                            {this.props.isEnglish ? 
+                                <h2>Unity Development</h2>
+                                :
+                                <h2>Unity游戏开发经历</h2>
+                            }
                         </div>
                         <div className='image img-3'>
                         </div>
                         <div className={`paragraph-single single-p3 ${this.props.showParaId.includes("p3") ? window.innerWidth >= 1200 ? `paragraph-show` : `` : ``}`}>
-                            <p>
-                                I taught myself C# and Unity development during the masters program of Design and Dev of Digital Games at Columbia University. I am excited to program various interactions/logics of the games, especially AR/VR development.
-                            </p>
+                            {this.props.isEnglish ? 
+                                <p>
+                                    I taught myself C# and Unity development during the masters program of Design and Development of Digital Games at Columbia University. I code the logics of games and have faith in AR/VR/MR development.
+                                </p>
+                                :
+                                <p>
+                                    我在哥伦比亚大学电子游戏开发与设计专业研究生项目的学习过程中通过各种学习资源和项目开发学习C#语言以及Unity3D引擎开发。我擅长于编写游戏逻辑并且热衷于AR/VR/MR的游戏开发。
+                                </p>
+                            }
                         </div>
                     </div>
                     <div className={`scroll scroll-p3 ${this.props.showParaId.includes("p3") ? window.innerWidth < 1200 ? `scroll-show` : `` : ``}`}>
-                        <p>
-                            I taught myself C# and Unity development during the masters program of Design and Dev of Digital Games at Columbia University. I am excited to program various interactions/logics of the games, especially AR/VR development.
-                        </p>
+                        {this.props.isEnglish ? 
+                            <p>
+                                I taught myself C# and Unity development during the masters program of Design and Development of Digital Games at Columbia University. I code the logics of games and have faith in AR/VR/MR development.
+                            </p>
+                            :
+                            <p>
+                                我在哥伦比亚大学电子游戏开发与设计专业研究生项目的学习过程中通过各种学习资源和项目开发学习C#语言以及Unity3D引擎开发。我擅长于编写游戏逻辑并且热衷于AR/VR/MR的游戏开发。
+                            </p>
+                        }
                     </div>
                     <div className={`paragraphs ${this.props.showParaId.includes("p4") ? `selection` : ``}`} id="p4" 
                         onClick = {() => this.props.showOrHideParagraph("p4")}>
                         <div className={`paragraph-title title-p4 ${this.props.showParaId.includes("p4") ? window.innerWidth >= 1200 ? `title-hide` : `` : ``}`}>
-                            <h2>Teaching Experience</h2>
+                            {this.props.isEnglish ? 
+                                <h2>Teaching Experience</h2>
+                                :
+                                <h2>教师经历</h2>
+                            }
                         </div>
                         <div className='image img-4'>
                         </div>
                         <div className={`paragraph-single single-p4 ${this.props.showParaId.includes("p4") ? window.innerWidth >= 1200 ? `paragraph-show` : `` : ``}`}>
-                            <p>
-                                In Beijing, China, Mandarin teacher in RICH summer camps and volunteer teacher for a non-profit educational orgnization INCLUDED with students of grade 2-3. Also, I worked as a pre-school teacher at River School in Jersey City and a Mandarin teacher at Hudsonway Immersion School in NYC.
-                            </p>
+                            {this.props.isEnglish ? 
+                                <p>
+                                    In Beijing, China, Mandarin teacher in RICH summer camps and volunteer teacher for a non-profit educational orgnization INCLUDED with students of grade 2-3. Also, I worked as a pre-school teacher at River School in Jersey City and a Mandarin teacher at Hudsonway Immersion School in NYC.
+                                </p>
+                                :
+                                <p>
+                                    北京RICH夏令营中文助教（2013）<br/>北京INCLUDED活力社区打工子弟志愿者教师（2013）<br/>新泽西州泽西城River School教师（2016）<br/>纽约市Hudsonway Immersion School小学全科教师（2016-2017）
+                                </p>
+                            }
                         </div>
                     </div>
                     <div className={`scroll scroll-p4 ${this.props.showParaId.includes("p4") ? window.innerWidth < 1200 ? `scroll-show` : `` : ``}`}>
-                        <p>
-                            In Beijing, China, Mandarin teacher in RICH summer camps and volunteer teacher for a non-profit educational orgnization INCLUDED with students of grade 2-3. Also, I worked as a pre-school teacher at River School in Jersey City and a Mandarin teacher at Hudsonway Immersion School in NYC.
-                        </p>
+                        {this.props.isEnglish ? 
+                            <p>
+                                In Beijing, China, Mandarin teacher in RICH summer camps and volunteer teacher for a non-profit educational orgnization INCLUDED with students of grade 2-3. Also, I worked as a pre-school teacher at River School in Jersey City and a Mandarin teacher at Hudsonway Immersion School in NYC.
+                            </p>
+                            :
+                            <p>
+                                北京RICH夏令营中文助教（2013）<br/>北京INCLUDED活力社区打工子弟志愿者教师（2013）<br/>新泽西州泽西城River School教师（2016）<br/>纽约市Hudsonway Immersion School小学全科教师（2016-2017）
+                            </p>
+                        }
                     </div>
                     
             </div>

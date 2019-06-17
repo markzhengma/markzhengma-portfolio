@@ -8,6 +8,7 @@ class Home extends Component {
         return (
             <div className = {`ui ${this.props.showResume ? "ui-show" : ""}`}>
                 <Header
+                    isEnglish = {this.props.isEnglish}
                     // homeRef = {this.props.homeRef}
                     // aboutRef = {this.props.aboutRef}
                     // workRef = {this.props.workRef}
@@ -20,7 +21,9 @@ class Home extends Component {
                     toggleShowResume = {this.props.toggleShowResume}
                 />
                 <Footer
+                    isEnglish = {this.props.isEnglish}
                     toggleShowResume = {this.props.toggleShowResume}
+                    switchLanguage = {this.props.switchLanguage}
                 />
             </div>
         )

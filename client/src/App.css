@@ -172,7 +172,7 @@ header{
   color: rgba(0,0,0,0.7);
 }
 .info-list{
-  width: 80vw;
+  width: fit-content;
   display: flex;
   justify-content: center;
 }
@@ -180,6 +180,20 @@ header{
   height: 30px;
   width: 30px;
   margin: 0 15px;
+}
+.language-btn{
+  height: 30px;
+  width: 50px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.language-btn:hover{
+  cursor: pointer;
+  color: gray;
+  animation: translateY 0.5s forwards;
 }
 .info-single a{
   color: white;

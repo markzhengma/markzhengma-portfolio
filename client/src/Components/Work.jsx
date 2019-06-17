@@ -8,7 +8,11 @@ class Work extends Component {
                 // ref = {this.props.workRef}
             >
                 <Element className="spacer work-spacer" name = "work-spacer"/>
-                <h2><i className="fas fa-pencil-alt"></i>My Work</h2>
+                {this.props.isEnglish ? 
+                    <h2><i className="fas fa-pencil-alt"></i>My Work</h2>
+                    :
+                    <h2><i className="fas fa-pencil-alt"></i>作品</h2>
+                }
                 <div className="project-list">
                     {this.props.workData ?
                         this.props.workData.map(project => {
