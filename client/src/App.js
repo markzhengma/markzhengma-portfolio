@@ -15,17 +15,31 @@ class App extends Component {
     // this.workRef = React.createRef();
     // this.contactRef = React.createRef();
     this.state = {
+      isEnglish: true,
       showResume: false,
       selectedWork: null,
       showParaId: [],
       showTechId: null,
       workData: [
         {
+            id: 17,
+            title: "Space Exploration Lab",
+            tech: ["Freelance Project", "{My Part: [Mobile App, Data Connection]}", "Firebase", "HTML, CSS & JS", "p5.js"],
+            btnOne: {
+                text: "YouTube",
+                url: "https://youtu.be/f56LLfo--J4"
+            },
+            btnTwo: {
+                text: "Journal Article",
+                url: "https://www.timeout.com/new-york-kids/news/nycs-latest-pop-up-experience-is-out-of-this-world-061119"
+            }
+        },
+        {
             id: 16,
             title: "WeBubbleTwo",
-            tech: ["Unity", "C#", "Independent Work"],
+            tech: ["Masters Graduation Project", "Unity", "MacOS & iOS PLatforms"],
             btnOne: {
-                text: "Video",
+                text: "YouTube",
                 url: "https://youtu.be/oJdBs7qOQos"
             },
             btnTwo: {
@@ -36,7 +50,7 @@ class App extends Component {
         {
             id: 15,
             title: "Witch's Grotto",
-            tech: ["Unity", "C#", "HTC Plugin", "Reality Virtually Hackathon"],
+            tech: ["Reality Virtually Hackathon", "{My Part: Puzzle Logics}", "Unity", "HTC Plugin"],
             btnOne: {
                 text: "DevPost",
                 url: "https://devpost.com/software/virtual-escape-room-bj9lwv"
@@ -49,9 +63,9 @@ class App extends Component {
         {
             id: 14,
             title: "Stay With Me",
-            tech: ["Unity", "C#", "Event System", "Navigation"],
+            tech: ["Team Project", "{My Part: [Event System, Inventory, Navigation, Animation]}", "Unity", "Event System", "Navigation"],
             btnOne: {
-                text: "Video",
+                text: "YouTube",
                 url: "https://youtu.be/au07OoysCdU"
             },
             btnTwo: {
@@ -62,9 +76,9 @@ class App extends Component {
         {
             id: 13,
             title: "InstaBot",
-            tech: ["Ruby", "Selenium"],
+            tech: ["Ruby", "Selenium", "Web Automation"],
             btnOne: {
-                text: "Video",
+                text: "YouTube",
                 url: "https://youtu.be/EGdbMELkgjM"
             },
             btnTwo: {
@@ -75,7 +89,7 @@ class App extends Component {
         {
             id: 12,
             title: "AR Tutorial",
-            tech: ["Unity", "C#", "Vuforia"],
+            tech: ["Presentation for Games Research Lab Workshop", "Unity", "C#", "Vuforia"],
             btnOne: {
                 text: "Session Notes",
                 url: "https://docs.google.com/presentation/d/1-L2tShT2nQu6cgwnBk5DxPdNl4QUCpckiGUwFkqgJlM/edit?usp=sharing"
@@ -88,7 +102,7 @@ class App extends Component {
         {
             id: 11,
             title: "Wechat Official Shell",
-            tech: ["ReactJS", "NodeJS", "PostgreSQL", "BMap API", "Independent Work"],
+            tech: ["Freelance Project", "ReactJS", "NodeJS", "PostgreSQL", "BMap API"],
             btnOne: {
                 text: "Website",
                 url: "https://wechat-official-shell.herokuapp.com"
@@ -114,9 +128,9 @@ class App extends Component {
         {
             id: 9,
             title: "LifoMMunity",
-            tech: ["Java", "Android Studio", "Firebase"],
+            tech: ["Team Project", "{My Part: [Firebase Auth, User Profile Storage]}", "Java", "Android Studio", "Firebase"],
             btnOne: {
-                text: "Video",
+                text: "YouTube",
                 url: "https://youtu.be/AbmFxUTz1tc"
             },
             btnTwo: {
@@ -124,32 +138,32 @@ class App extends Component {
                 url: "https://github.com/markzhengma/LifoMMunity"
             }
         },
-        {
-            id: 8,
-            title: "CU Event",
-            tech: ["ReactJS", "NodeJS", "PostgreSQL"],
-            btnOne: {
-                text: "Website",
-                url: "https://cu-event-app.herokuapp.com/"
-            },
-            btnTwo: {
-                text: "GitHub",
-                url: "https://github.com/markzhengma/cu-event-app"
-            }
-        },
+        // {
+        //     id: 8,
+        //     title: "CU Event",
+        //     tech: ["ReactJS", "NodeJS", "PostgreSQL"],
+        //     btnOne: {
+        //         text: "Website",
+        //         url: "https://cu-event-app.herokuapp.com/"
+        //     },
+        //     btnTwo: {
+        //         text: "GitHub",
+        //         url: "https://github.com/markzhengma/cu-event-app"
+        //     }
+        // },
         {
             id: 7,
             title: "Geek Olympics",
-            tech: ["Non-digital Card Game", "Learn to code through playing"],
+            tech: ["Team Project", "Non-digital Card Game", "Learn coding logics with card game"],
             btnOne: {
-                text: "Video",
+                text: "YouTube",
                 url: "https://youtu.be/vAiOSLtFoGw"
             }
         },
         {
             id: 6,
             title: "Zombie Run",
-            tech: ["Unity", "C#", "Independent Work"],
+            tech: ["Unity", "C#"],
             btnOne: {
                 text: "Itch.io",
                 url: "https://markzhengma.itch.io/zombierun"
@@ -162,7 +176,7 @@ class App extends Component {
         {
             id: 5,
             title: "To Be With You",
-            tech: ["Unity", "C#", "WikiTude", "Firebase"],
+            tech: ["Unity", "C#", "WikiTude AR", "Firebase"],
             btnOne: {
                 text: "GitHub",
                 url: "https://github.com/markzhengma/ar-pet"
@@ -171,7 +185,7 @@ class App extends Component {
         {
             id: 4,
             title: "Grandmaster",
-            tech: ["ExpressJS", "ReactJS", "SocketIO", "Firebase"],
+            tech: ["Team Project", "{My Part: [User Registration, Card Inventory, Battle Logics]}", "ExpressJS", "ReactJS", "SocketIO", "Firebase"],
             btnOne: {
                 text: "Website",
                 url: "https://grandmaster-io.herokuapp.com"
@@ -269,6 +283,7 @@ class App extends Component {
       <div className="App">
         <div className='background-img'></div>
         <UI 
+          isEnglish = {this.state.isEnglish}
           showResume = {this.state.showResume}
           toggleShowResume = {this.toggleShowResume}
           scrollToElement = {this.scrollToElement}
@@ -280,6 +295,7 @@ class App extends Component {
         />
         <Home 
           // homeRef = {this.homeRef}
+          isEnglish = {this.state.isEnglish}
           recentWork = {this.state.workData[0]}
           scrollToElement = {this.scrollToElement}
           // scrollToRef = {this.scrollToRef}
@@ -287,17 +303,20 @@ class App extends Component {
         />
         <About 
           // aboutRef = {this.aboutRef}
+          isEnglish = {this.state.isEnglish}
           showParaId = {this.state.showParaId}
           showOrHideParagraph = {this.showOrHideParagraph}
         />
         <Work 
           // workRef = {this.workRef}
+          isEnglish = {this.state.isEnglish}
           workData = {this.state.workData}
           showTechId = {this.state.showTechId}
           showTech = {this.showTech}
           hideTech = {this.hideTech}
         />
         <Contact 
+          isEnglish = {this.state.isEnglish}
           // contactRef = {this.contactRef}
         />
       </div>
