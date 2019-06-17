@@ -193,7 +193,6 @@ header{
 .language-btn:hover{
   cursor: pointer;
   color: gray;
-  animation: translateY 0.5s forwards;
 }
 .info-single a{
   color: white;
