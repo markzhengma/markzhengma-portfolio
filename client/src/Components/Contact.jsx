@@ -26,9 +26,9 @@ class Contact extends Component {
                             />
                             <textarea name="message" placeholder=
                             {this.props.isEnglish ? 
-                                "Please leave your message, thank you."
+                                "Please leave me a message if there's an opportunity for projects/cooporation, thank you."
                                 :
-                                "请在这里留言，谢谢。"
+                                "如果有项目合作意向请在这里留言，谢谢。"
                             }
                             ></textarea>
                             <button type="submit">Send</button>

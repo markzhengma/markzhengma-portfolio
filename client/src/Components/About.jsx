@@ -114,7 +114,7 @@ class About extends Component {
                                 </p>
                                 :
                                 <p>
-                                    在General Assembly网站开发集训项目获得结业证书后，我学到了全站开发的专业技术，开始独立开发或参与开发各类全栈网站项目。之后继续学习各类开发技能，并接手各类freelance开发项目。
+                                    获得 General Assembly 全栈网站开发培训班结业证书。<br/>不断自学更新自己的开发者技能库。<br/>专业开发全栈网站，擅长使用ReactJS，ExpressJS和PostgreSQL，熟练掌握Git相关应用。<br/>承接各类网站开发项目。
                                 </p>
                             }
                         </div>
@@ -126,7 +126,7 @@ class About extends Component {
                             </p>
                             :
                             <p>
-                                在General Assembly网站开发集训项目获得结业证书后，我学到了全站开发的专业技术，开始独立开发或参与开发各类全栈网站项目。之后继续学习各类开发技能，并接手各类freelance开发项目。
+                                获得 General Assembly 全栈网站开发培训班结业证书。<br/>不断自学更新自己的开发者技能库。<br/>专业开发全栈网站，擅长使用ReactJS，ExpressJS和PostgreSQL，熟练掌握Git相关应用。<br/>承接各类网站开发项目。
                             </p>
                         }
                     </div>
@@ -148,7 +148,7 @@ class About extends Component {
                                 </p>
                                 :
                                 <p>
-                                    我在哥伦比亚大学电子游戏开发与设计专业研究生项目的学习过程中通过各种学习资源和项目开发学习C#语言以及Unity3D引擎开发。我擅长于编写游戏逻辑并且热衷于AR/VR/MR的游戏开发。
+                                    哥伦比亚大学电子游戏开发与设计专业研究生项目的学习期间通过项目开发自学C#语言以及Unity3D引擎开发。<br/>擅长于编写游戏逻辑并且热衷于AR/VR/MR的游戏开发。<br/>承接各类游戏开发项目。
                                 </p>
                             }
                         </div>
@@ -160,7 +160,7 @@ class About extends Component {
                             </p>
                             :
                             <p>
-                                我在哥伦比亚大学电子游戏开发与设计专业研究生项目的学习过程中通过各种学习资源和项目开发学习C#语言以及Unity3D引擎开发。我擅长于编写游戏逻辑并且热衷于AR/VR/MR的游戏开发。
+                                哥伦比亚大学电子游戏开发与设计专业研究生项目的学习期间通过项目开发自学C#语言以及Unity3D引擎开发。<br/>擅长于编写游戏逻辑并且热衷于AR/VR/MR的游戏开发。<br/>承接各类游戏开发项目。
                             </p>
                         }
                     </div>

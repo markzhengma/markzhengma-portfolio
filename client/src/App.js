@@ -247,7 +247,7 @@ class App extends Component {
 
   scrollToElement = (name) => {
     scroller.scrollTo(name, {
-      duration: 800,
+      duration: 500,
       smooth: true,
     })
   }
