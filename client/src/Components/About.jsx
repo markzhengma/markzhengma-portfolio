@@ -95,7 +95,7 @@ class About extends Component {
                                 BA in Chinese Language and Literature from Beijing Language and Culture University (2010-2014). <br/>MS in Teaching and Curriculum from Syracuse University (2014-2016). <br/>MA in Design and Development of Digital Games at Columbia Unviersity (2017-2019).
                             </p>
                             :
-                            <p className = {this.props.showParaId.includes("p1") ? 'p-show' : 'p-hide'}>
+                            <p className = {this.props.showParaId.includes("p1") ? window.innerWidth < 1200 ? 'p-show' : 'p-hide' : 'p-hide'}>
                                 硕士 2：哥伦比亚大学 电子游戏开发与设计专业 (2017至2019).
                                 <br/>硕士 1：雪城大学 教育学专业 (2014至2016). 
                                 <br/>本科：北京语言大学 汉语言文学专业 (2010至2014). 
