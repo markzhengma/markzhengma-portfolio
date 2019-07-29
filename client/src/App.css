@@ -187,16 +187,21 @@ header{
 }
 .language-btn{
   height: 30px;
-  width: 50px;
+  width: fit-content;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 1);
   margin-left: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  transition: background-color 0.5s, color 0.5s;
 }
 .language-btn:hover{
   cursor: pointer;
-  color: gray;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0,0,0,0.3);
 }
 .info-single a{
   color: white;
@@ -874,27 +879,6 @@ h1{
   .contact-form{
     width: 450px;
   }
-
-  .info{
-      flex-direction: row;
-  }
-  .info-title{
-      font-size: 20px;
-      width: 50vw;
-  }
-  .info-list{
-      width: 50vw;
-  }
-  .info-single{
-      height: 30px;
-      width: 30px;
-  }
-  .info-single a{
-      font-size: 30px;
-  }
-  .envelope i{
-      font-size: 26px;
-  }
 }
 
 @media (min-width: 900px){
@@ -949,6 +933,26 @@ h1{
   }
   .contact-form{
     width: 840px;
+  }
+  .info{
+    flex-direction: row;
+  }
+  .info-title{
+      font-size: 20px;
+      width: 50vw;
+  }
+  .info-list{
+      width: 50vw;
+  }
+  .info-single{
+      height: 30px;
+      width: 30px;
+  }
+  .info-single a{
+      font-size: 30px;
+  }
+  .envelope i{
+      font-size: 26px;
   }
 }
 

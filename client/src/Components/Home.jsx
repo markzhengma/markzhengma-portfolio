@@ -8,6 +8,7 @@ class Home extends Component {
                 // ref={this.props.homeRef}
                 >
                 <Element className = 'home-box-spacer' name = "home-spacer"/>
+                <div className='language-btn' onClick = {this.props.switchLanguage}>{this.props.isEnglish ? "中文" : "ENGLISH"}</div>
                 <div className = 'home-box'>
                     {this.props.isEnglish ? 
                         <div className='word-box'>

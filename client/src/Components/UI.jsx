@@ -17,6 +17,7 @@ class Home extends Component {
                     scrollToElement = {this.props.scrollToElement}
                 />
                 <Resume 
+                    isEnglish = {this.props.isEnglish}
                     showResume = {this.props.showResume}
                     toggleShowResume = {this.props.toggleShowResume}
                 />
