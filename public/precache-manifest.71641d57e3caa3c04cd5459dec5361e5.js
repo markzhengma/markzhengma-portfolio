@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/androidstudio.a803e97a.png"
   },
   {
-    "revision": "38ae549441522df38c7b",
-    "url": "/static/css/main.cb43f57a.chunk.css"
+    "revision": "9fbe39cf28d364369b9f",
+    "url": "/static/css/main.417658dd.chunk.css"
   },
   {
     "revision": "09e7e724f0066b65abb9",
@@ -24,24 +24,24 @@ self.__precacheManifest = [
     "url": "/static/media/css.fbe01551.png"
   },
   {
-    "revision": "49a26ccddaad434f9f308e27bc7778b4",
-    "url": "/static/media/ruby.49a26ccd.png"
-  },
-  {
     "revision": "3ad7d4623b8bb182f4cccb51917577d1",
     "url": "/static/media/sql.3ad7d462.png"
   },
   {
-    "revision": "e7b8fcd4ceb430ffc60ed55e5ab98fa5",
-    "url": "/static/media/csharp.e7b8fcd4.png"
+    "revision": "49a26ccddaad434f9f308e27bc7778b4",
+    "url": "/static/media/ruby.49a26ccd.png"
+  },
+  {
+    "revision": "bc989e9afe79d919e00e46cd15dbf29b",
+    "url": "/static/media/socket.bc989e9a.png"
   },
   {
     "revision": "cb6d2b650f22c27ca7d396709d17898b",
     "url": "/static/media/java.cb6d2b65.png"
   },
   {
-    "revision": "bc989e9afe79d919e00e46cd15dbf29b",
-    "url": "/static/media/socket.bc989e9a.png"
+    "revision": "e7b8fcd4ceb430ffc60ed55e5ab98fa5",
+    "url": "/static/media/csharp.e7b8fcd4.png"
   },
   {
     "revision": "50d0834e3e146ad945ee8b4f89b5b309",
@@ -52,12 +52,12 @@ self.__precacheManifest = [
     "url": "/static/media/react.90552fc5.png"
   },
   {
-    "revision": "35ed7b7b9d4fe94fad29a2c0b6231f08",
-    "url": "/static/media/vuforia.35ed7b7b.png"
-  },
-  {
     "revision": "711161201697558cacc74680a4a0b682",
     "url": "/static/media/unity_paragraph.71116120.jpg"
+  },
+  {
+    "revision": "35ed7b7b9d4fe94fad29a2c0b6231f08",
+    "url": "/static/media/vuforia.35ed7b7b.png"
   },
   {
     "revision": "f3468beed8e6cf14d74f8276530d76ec",
@@ -84,16 +84,16 @@ self.__precacheManifest = [
     "url": "/static/media/su.e3f8f8b3.jpg"
   },
   {
-    "revision": "38ae549441522df38c7b",
-    "url": "/static/js/main.38ae5494.chunk.js"
-  },
-  {
-    "revision": "4f12db490f285ecd935b32469e5042e2",
-    "url": "/static/media/we_bubble_two.4f12db49.jpg"
+    "revision": "9fbe39cf28d364369b9f",
+    "url": "/static/js/main.9fbe39cf.chunk.js"
   },
   {
     "revision": "0d353a612390ee17768cb379c46a1023",
     "url": "/static/media/shell.0d353a61.png"
+  },
+  {
+    "revision": "4f12db490f285ecd935b32469e5042e2",
+    "url": "/static/media/we_bubble_two.4f12db49.jpg"
   },
   {
     "revision": "386b045fd3c58f5addd142074517f11d",
@@ -108,20 +108,20 @@ self.__precacheManifest = [
     "url": "/static/media/chalkboard.0fc0d98c.jpg"
   },
   {
-    "revision": "b0d84734a9fc9c24115f0ac8448b2585",
-    "url": "/static/media/ar-pet.b0d84734.jpg"
-  },
-  {
-    "revision": "fa3006ff482b6bb8979a7d385ae21c19",
-    "url": "/static/media/language-studio.fa3006ff.jpg"
-  },
-  {
     "revision": "97ee7cf914cc43eaba4d97f961638d30",
     "url": "/static/media/cuevent.97ee7cf9.jpg"
   },
   {
     "revision": "4ca16b236d7bd0570b808b56ad8b34fd",
     "url": "/static/media/geekolympics.4ca16b23.jpg"
+  },
+  {
+    "revision": "fa3006ff482b6bb8979a7d385ae21c19",
+    "url": "/static/media/language-studio.fa3006ff.jpg"
+  },
+  {
+    "revision": "b0d84734a9fc9c24115f0ac8448b2585",
+    "url": "/static/media/ar-pet.b0d84734.jpg"
   },
   {
     "revision": "f176eb0187449e4b61661ca330dc3131",
@@ -164,7 +164,11 @@ self.__precacheManifest = [
     "url": "/static/media/space-exploration.eabfa8f0.jpg"
   },
   {
-    "revision": "dd0f693877eea1b4d194fdc3ac4c5b2d",
+    "revision": "4d9dfe40ce9304d2b0cb7a54d34dbcc6",
+    "url": "/static/media/chinese_font_1.4d9dfe40.ttf"
+  },
+  {
+    "revision": "ad8eaff401edbd48fe162fd7beef55da",
     "url": "/index.html"
   }
 ];
