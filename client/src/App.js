@@ -15,7 +15,7 @@ class App extends Component {
     // this.workRef = React.createRef();
     // this.contactRef = React.createRef();
     this.state = {
-      isEnglish: true,
+      isEnglish: false,
       showResume: false,
       selectedWork: null,
       showParaId: [],
@@ -26,8 +26,9 @@ class App extends Component {
             title: "Space Exploration Lab",
             tech: ["Freelance Project", "{My Part: [Mobile App, Data Connection]}", "Firebase", "HTML, CSS & JS", "p5.js"],
             btnOne: {
-                text: "YouTube",
-                url: "https://youtu.be/f56LLfo--J4"
+                text: "Demo",
+                url: "https://youtu.be/f56LLfo--J4",
+                alt_url: "http://share.polyv.net/front/video/preview?vid=720d62c88e1fb09626729c26d3b9d658_7"
             },
             btnTwo: {
                 text: "Journal Article",
@@ -39,8 +40,9 @@ class App extends Component {
             title: "WeBubbleTwo",
             tech: ["Masters Graduation Project", "Unity", "MacOS & iOS PLatforms"],
             btnOne: {
-                text: "YouTube",
-                url: "https://youtu.be/oJdBs7qOQos"
+                text: "Demo",
+                url: "https://youtu.be/oJdBs7qOQos",
+                alt_url: "http://share.polyv.net/front/video/preview?vid=720d62c88e45c8f5615e0787c7f6b85f_7"
             },
             btnTwo: {
                 text: "Itch.io",
@@ -53,7 +55,8 @@ class App extends Component {
             tech: ["Reality Virtually Hackathon", "{My Part: Puzzle Logics}", "Unity", "HTC Plugin"],
             btnOne: {
                 text: "DevPost",
-                url: "https://devpost.com/software/virtual-escape-room-bj9lwv"
+                url: "https://devpost.com/software/virtual-escape-room-bj9lwv",
+                alt_url: "http://share.polyv.net/front/video/preview?vid=720d62c88e18c8a5bfbd18c1d029e7e6_7"
             },
             btnTwo: {
                 text: "GitHub",
@@ -65,7 +68,7 @@ class App extends Component {
             title: "Stay With Me",
             tech: ["Team Project", "{My Part: [Event System, Inventory, Navigation, Animation]}", "Unity", "Event System", "Navigation"],
             btnOne: {
-                text: "YouTube",
+                text: "Demo",
                 url: "https://youtu.be/au07OoysCdU"
             },
             btnTwo: {
@@ -78,8 +81,9 @@ class App extends Component {
             title: "InstaBot",
             tech: ["Ruby", "Selenium", "Web Automation"],
             btnOne: {
-                text: "YouTube",
-                url: "https://youtu.be/EGdbMELkgjM"
+                text: "Demo",
+                url: "https://youtu.be/EGdbMELkgjM",
+                alt_url: "http://share.polyv.net/front/video/preview?vid=720d62c88ef6943ca022ae7875f04bbc_7"
             },
             btnTwo: {
                 text: "GitHub",
@@ -130,8 +134,9 @@ class App extends Component {
             title: "LifoMMunity",
             tech: ["Team Project", "{My Part: [Firebase Auth, User Profile Storage]}", "Java", "Android Studio", "Firebase"],
             btnOne: {
-                text: "YouTube",
-                url: "https://youtu.be/AbmFxUTz1tc"
+                text: "Demo",
+                url: "https://youtu.be/AbmFxUTz1tc",
+                alt_url: "http://share.polyv.net/front/video/preview?vid=720d62c88efee0d5aa04752495fedfd4_7"
             },
             btnTwo: {
                 text: "GitHub",
@@ -156,8 +161,9 @@ class App extends Component {
             title: "Geek Olympics",
             tech: ["Team Project", "Non-digital Card Game", "Learn coding logics with card game"],
             btnOne: {
-                text: "YouTube",
-                url: "https://youtu.be/vAiOSLtFoGw"
+                text: "Demo",
+                url: "https://youtu.be/vAiOSLtFoGw",
+                alt_url: "http://share.polyv.net/front/video/preview?vid=720d62c88ed5946164f49d019d758b13_7"
             }
         },
         {

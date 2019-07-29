@@ -2,13 +2,17 @@ html, body{
   max-width: 100%;
   overflow-x: hidden;
 }
+@font-face {
+  font-family: chinese_font_1;
+  src: url('./chinese_font_1.ttf');
+}
 .App{
   /* background:url("pics/background.jpg");
   background-size:cover;
   background-repeat:no-repeat;
   background-attachment:fixed;
   background-position: center; */
-  font-family: 'Cabin Sketch', cursive;
+  font-family: chinese_font_1;
   width: 100vw;
 }
 .background-img{
@@ -564,8 +568,7 @@ h1{
   width: 80vw;
   max-width: 960px;
   height:fit-content;
-  max-height: 0px;
-  overflow: hidden;
+  /* height: 0px; */
   justify-content: center;
   align-items: center;
   transition: max-height 0.5s ease-in-out;
@@ -575,19 +578,41 @@ h1{
   width: 70vw;
   font-size: 15px;
   margin: 20px;
+  transition: opacity 0.5s;
 }
 .scroll-show{
   /* height: fit-content; */
   max-height:600px;
+  /* height: 100px; */
   /* overflow-y: scroll; */
+}
+.scroll-hide{
+  max-height: 0px;
+  /* overflow: hidden; */
 }
 #p5 .paragraph-single{
   display: flex;
   flex-wrap: wrap;
 }
-.scroll-p5{
+/* .scroll-p5{
   display: flex;
   flex-wrap: wrap;
+} */
+.skill-p{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: opacity 0.7s;
+}
+.p-show{
+  opacity: 1;
+  z-index: 1;
+}
+.p-hide{
+  opacity: 0;
+  z-index: -1;
 }
 .skill-single{
   height: 70px;
@@ -661,7 +686,7 @@ h1{
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.5s;
+  /* transition: 0.5s; */
   font-size: 0px;
 }
 /* .skill-name:hover{
@@ -707,7 +732,6 @@ h1{
   font-size: 20px;
   font-weight: bold;
   transition: background-color 0.3s;
-  font-family: 'Cabin Sketch', cursive;
   color: white;
   background-color: rgba(0,0,0,0.2);
 }
@@ -723,7 +747,6 @@ h1{
   font-size: 20px;
   resize: none;
   transition: background-color 0.3s;
-  font-family: 'Cabin Sketch', cursive;
   font-weight: bold;
   color: white;
   box-sizing: border-box;
@@ -743,7 +766,6 @@ h1{
   font-size: 15px;
   cursor: pointer;
   transition: background-color 0.3s;
-  font-family: 'Cabin Sketch', cursive;
 }
 .contact-form button:hover{
   background-color: rgba(255, 255, 255, 0.8);

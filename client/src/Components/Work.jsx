@@ -40,18 +40,40 @@ class Work extends Component {
                                 {project.btnTwo ? 
                                     <div className='project-button-list'>
                                         <div className='project-button'>
+                                            {this.props.isEnglish ? 
                                                 <a href={project.btnOne.url} target='_blank'>
                                                     <b>{project.btnOne.text}</b>
                                                 </a>
+                                                :
+                                                project.btnOne.alt_url ?
+                                                    <a href={project.btnOne.alt_url} target='_blank'>
+                                                        <b>{project.btnOne.text}</b>
+                                                    </a>
+                                                    :
+                                                    <a href={project.btnOne.url} target='_blank'>
+                                                        <b>{project.btnOne.text}</b>
+                                                    </a>
+                                            }
                                         </div>
                                         <div className='project-button'><a href={project.btnTwo.url} target='_blank'><b>{project.btnTwo.text}</b></a></div>
                                     </div>
                                     :
                                     <div className='project-button-list'>
                                         <div className='project-button' style = {{'width': "360px"}}>
+                                            {this.props.isEnglish ? 
                                                 <a href={project.btnOne.url} target='_blank'>
                                                     <b>{project.btnOne.text}</b>
                                                 </a>
+                                                :
+                                                project.btnOne.alt_url ?
+                                                    <a href={project.btnOne.alt_url} target='_blank'>
+                                                        <b>{project.btnOne.text}</b>
+                                                    </a>
+                                                    :
+                                                    <a href={project.btnOne.url} target='_blank'>
+                                                        <b>{project.btnOne.text}</b>
+                                                    </a>
+                                            }
                                         </div>
                                     </div>
                                 }
