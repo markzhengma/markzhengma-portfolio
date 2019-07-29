@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/androidstudio.a803e97a.png"
   },
   {
-    "revision": "9fbe39cf28d364369b9f",
+    "revision": "fca779ec55bc3f3d0037",
     "url": "/static/css/main.417658dd.chunk.css"
   },
   {
@@ -52,12 +52,12 @@ self.__precacheManifest = [
     "url": "/static/media/react.90552fc5.png"
   },
   {
-    "revision": "711161201697558cacc74680a4a0b682",
-    "url": "/static/media/unity_paragraph.71116120.jpg"
-  },
-  {
     "revision": "35ed7b7b9d4fe94fad29a2c0b6231f08",
     "url": "/static/media/vuforia.35ed7b7b.png"
+  },
+  {
+    "revision": "711161201697558cacc74680a4a0b682",
+    "url": "/static/media/unity_paragraph.71116120.jpg"
   },
   {
     "revision": "f3468beed8e6cf14d74f8276530d76ec",
@@ -84,16 +84,16 @@ self.__precacheManifest = [
     "url": "/static/media/su.e3f8f8b3.jpg"
   },
   {
-    "revision": "9fbe39cf28d364369b9f",
-    "url": "/static/js/main.9fbe39cf.chunk.js"
-  },
-  {
-    "revision": "0d353a612390ee17768cb379c46a1023",
-    "url": "/static/media/shell.0d353a61.png"
+    "revision": "fca779ec55bc3f3d0037",
+    "url": "/static/js/main.fca779ec.chunk.js"
   },
   {
     "revision": "4f12db490f285ecd935b32469e5042e2",
     "url": "/static/media/we_bubble_two.4f12db49.jpg"
+  },
+  {
+    "revision": "0d353a612390ee17768cb379c46a1023",
+    "url": "/static/media/shell.0d353a61.png"
   },
   {
     "revision": "386b045fd3c58f5addd142074517f11d",
@@ -108,12 +108,12 @@ self.__precacheManifest = [
     "url": "/static/media/chalkboard.0fc0d98c.jpg"
   },
   {
-    "revision": "97ee7cf914cc43eaba4d97f961638d30",
-    "url": "/static/media/cuevent.97ee7cf9.jpg"
-  },
-  {
     "revision": "4ca16b236d7bd0570b808b56ad8b34fd",
     "url": "/static/media/geekolympics.4ca16b23.jpg"
+  },
+  {
+    "revision": "97ee7cf914cc43eaba4d97f961638d30",
+    "url": "/static/media/cuevent.97ee7cf9.jpg"
   },
   {
     "revision": "fa3006ff482b6bb8979a7d385ae21c19",
@@ -168,7 +168,7 @@ self.__precacheManifest = [
     "url": "/static/media/chinese_font_1.4d9dfe40.ttf"
   },
   {
-    "revision": "ad8eaff401edbd48fe162fd7beef55da",
+    "revision": "94b270b6f40dffb4a6b1a1276f860eb7",
     "url": "/index.html"
   }
 ];
