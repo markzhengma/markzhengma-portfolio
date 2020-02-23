@@ -106,14 +106,14 @@ class App extends Component {
         {
             id: 11,
             title: "Wechat Official Shell",
-            tech: ["Freelance Project", "ReactJS", "NodeJS", "PostgreSQL", "BMap API"],
+            tech: ["Freelance Project", "ReactJS", "EggJS", "Docker"],
             btnOne: {
-                text: "Website",
-                url: "https://wechat-official-shell.herokuapp.com"
-            // },
-            // btnTwo: {
-            //     text: "GitHub",
-            //     url: "https://github.com/markzhengma/wechat-official-shell"
+                text: "EggJS Server",
+                url: "https://github.com/markzhengma/server-shell-v2"
+            },
+            btnTwo: {
+                text: "ReactJS Client",
+                url: "https://github.com/markzhengma/client-shell-v2"
             }
         },
         {
