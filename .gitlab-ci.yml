@@ -13,8 +13,10 @@ stages:
 
 build:
   stage: build
+  tags:
+    - marky-runner
   only:
-    - tags
+    - master
   script:
     - echo 'building docker image...'
     - echo ${CONTAINER_NAME}
@@ -24,8 +26,10 @@ build:
 
 deploy:
   stage: deploy
+  tags:
+    - marky-runner
   only:
-    - tags
+    - master
   script:
     - echo 'removing older version container...'
     - docker kill ${CI_PROJECT_NAME} && docker rm ${CI_PROJECT_NAME}
