@@ -3,7 +3,7 @@ variables:
   PORT: 3000
 
 before_script:
-  - docker pull registry.markzhengma.com/markynode
+  - docker pull node:latest
   - echo "connected to docker registry, ready to start..."
   - pwd
 
