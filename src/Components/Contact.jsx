@@ -33,6 +33,14 @@ class Contact extends Component {
                             ></textarea>
                             <button type="submit">Send</button>
                         </form>
+                        <a target="_blank" 
+                            rel="noopener noreferrer"
+                            href="http://beian.miit.gov.cn" 
+                            style={{display:'inline-block',textDecoration: 'none', paddingBottom: "160px", height:'20px', lineHeight:'20px'}}>
+                            <p style={{float:'left',height:'20px',lineHeight:'20px',margin: '0px 0px 0px 5px', color:'white'}}>
+                                沪ICP备2024096456号-2
+                            </p>
+                        </a>
                     </div>
                 {/* </div>  */}
             </div>

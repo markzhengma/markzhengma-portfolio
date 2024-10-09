@@ -287,7 +287,7 @@ class App extends Component {
 
   switchLanguage = () => {
     var result = window.confirm("考虑到国家和地区的限制，更改语言也会随之更改我的视频演示网站链接（谷歌和YouTube相关服务），是否继续？\r\nConsidering the restrictions of YouTube and Google services in Mainland China, changing language will change the links to my demo videos, which might affect your accessibility of these videos. Do you still want to continue?");
-    if(result == true){
+    if(result === true){
       this.setState({
         isEnglish: !this.state.isEnglish
       })
