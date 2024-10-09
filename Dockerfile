@@ -1,10 +1,10 @@
-FROM node:latest AS builder
+FROM node:lts-alpine AS builder
 WORKDIR /app
 COPY . .
 RUN npm install
 RUN npm run build
 
-FROM node:latest
+FROM node:lts-alpine
 RUN npm install -g serve
 WORKDIR /app
 COPY --from=builder /app/build .
